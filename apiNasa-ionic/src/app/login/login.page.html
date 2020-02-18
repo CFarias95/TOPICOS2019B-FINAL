@@ -1,0 +1,61 @@
+<!-- /**
+* Ionic Firebase Full Auth App  (https://store.enappd.com/product/firebase-starter-full-auth/)
+*
+* Copyright © 2019-present Enappd. All rights reserved.
+*
+* This source code is licensed as per the terms found in the
+* LICENSE.md file in the root directory of this source tree.
+*/  -->
+
+
+<ion-content class="ion-no-padding">
+  <div class="main">
+    <ion-card class="ion-no-margin">
+      <ion-card-content>
+        <ion-row class="row">
+          <div class="fire-logo">
+            <img src="assets/login.png" class="img-logo">
+            <ion-text>
+              <h2 class="ion-no-margin ion-margin-vertical ion-text-center">Bienvenido!!</h2>
+            </ion-text>
+          </div>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-input clearInput type="email" placeholder="Email" [(ngModel)]="email" class="input" padding-horizontal
+              clear-input="true"></ion-input>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-input clearInput type="password" placeholder="Password" [(ngModel)]="password" class="input"
+              padding-horizontal clear-input="true"></ion-input>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-button expand="block" (click)="login()" color="success" class="transition">
+              <strong>Iniciar</strong>
+              </ion-button>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-text class="error" text-center>{{error}}</ion-text>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-text text-center class="block">No tienes cuenta ?
+              <span class="bold" routerLink="/signup">Registrate!</span></ion-text>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-text text-center class="block bold" routerLink="/forgot">Olvide la Contraseña</ion-text>
+          </ion-col>
+        </ion-row>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

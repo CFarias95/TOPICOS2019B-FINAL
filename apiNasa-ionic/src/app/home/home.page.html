@@ -1,0 +1,38 @@
+<ion-menu side="start" menuId="first" contentId="main">
+  <ion-header>
+    <ion-toolbar color="primary">
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-item>Destacada</ion-item>
+      <ion-item routerLink="/fotos" end >Fotos</ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<div class="ion-page" id="main">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>Imagen del Dia</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content fullscreen>
+    <ion-item *ngFor="let dato of Data ">
+      <ion-card>
+        <img [src]="dato.url" />
+        <ion-card-header>
+          <ion-card-subtitle>{{dato.date}}</ion-card-subtitle>
+          <ion-card-title>{{dato.title}}</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          {{ dato.explanation }}
+        </ion-card-content>
+      </ion-card>
+    </ion-item>
+  </ion-content>
+</div>
