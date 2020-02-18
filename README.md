@@ -6,7 +6,7 @@ La aplicacion utiliza un api de la nasa llamado APOD, para el uso de esta api se
 La plicacion en ionic iniciara con un login y tambien Contará con un proceso de registro y luego mostrara el contenido que se optiene de la api de la nasa. para poder obtener los datos desde la api se crea un servicio y se importa el componente HttpClient con el cual podremos realizar una petición utilizando los diferente metodos con los que cuenta HTTP.<br/>
 # Inicial
 -npm install<br/>
--cambiar el pai key del archivo .service.ts por la que se genera en https://api.nasa.gov/ <br/>
+-cambiar el apy_key del archivo .service.ts por la que se genera en https://api.nasa.gov/ <br/>
 -ionic serve <br/>
 # Video
 https://youtu.be/FQ1x5-PtK2Y
